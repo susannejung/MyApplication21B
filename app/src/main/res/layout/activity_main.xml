@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible"
+        tools:actionBarNavMode="standard"
+        tools:visibility="visible">
+
+        <TableLayout
+            android:id="@+id/TableLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="16dp"
+            android:background="#f1f1f1"
+            android:shrinkColumns="0"
+            android:stretchColumns="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+
+                    android:id="@+id/simpleTextView"
+                    android:layout_column="0"
+                    android:background="#b0b0b0"
+                    android:padding="18dip"
+                    android:text="Nummer"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+
+                    android:id="@+id/simpleTextView1"
+                    android:layout_column="1"
+                    android:background="#b0b0b0"
+                    android:padding="18dip"
+                    android:text="Navn"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </TableLayout>
+    </ScrollView>
+
+    </LinearLayout>
